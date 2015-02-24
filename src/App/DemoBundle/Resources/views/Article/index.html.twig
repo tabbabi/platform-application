@@ -1,0 +1,20 @@
+{% extends 'OroUIBundle:actions:index.html.twig' %}
+{% import 'OroUIBundle::macros.html.twig' as UI %}
+{% set gridName = 'articles-grid' %}
+{% set pageTitle = 'Articles' %}
+
+{% block navButtons %}
+    {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
+        exportProcessor: 'entiy_class',
+        exportTemplateProcessor: 'oro_user'
+    } %}
+
+    {% if resource_granted('oro_user_user_create') %}
+        <div class="btn-group">
+            {{ UI.addButton({
+            'path': path('oro_user_create'),
+            'entity_label': 'Article'
+            }) }}
+        </div>
+    {% endif %}
+{% endblock %}

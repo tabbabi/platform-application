@@ -1,0 +1,22 @@
+oro_menu_config:
+    items:
+        appdemo_tab:
+            label: App Demot
+            uri:   '#'
+            extras:
+                position: 300
+        appdemo_tab_link:
+            label: AppDemo Link 1
+            route: app_demo_homepage
+            extras:
+                routes: ['/^name/']
+                description: This is a AppDemo link
+    tree:
+        application_menu:
+            children:
+                appdemo_tab:
+                    children:
+                        appdemo_tab_link: ~
+ 
+oro_titles:
+    app_demo_homepage: My link page title

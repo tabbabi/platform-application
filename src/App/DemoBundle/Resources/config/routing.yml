@@ -1,0 +1,6 @@
+app_demo_homepage:
+    path:     /hello
+    defaults: { _controller: AppDemoBundle:Default:index }
+app_demo_article_index:
+    path:     /article
+    defaults: { _controller: AppDemoBundle:Article:index }

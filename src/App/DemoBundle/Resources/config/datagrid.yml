@@ -1,0 +1,21 @@
+datagrid:
+    articles-grid:
+        extended_entity_name: %app_article.entity.class%
+        options:
+            entityHint: article
+            entity_pagination: true
+        source:
+            acl_resource: oro_user_user_view
+            type: orm
+            query:
+                select:
+                    - u.id
+                    - u.title
+                    - u.content
+                from:
+                    - { table: %app_article.entity.class%, alias: u }
+        columns:
+            title:
+                label:         app.demo.article.title.label
+            content:
+                label:         app.demo.article.content.label
