@@ -15,7 +15,8 @@
         }
     ],
     "require": {
-        "oro/platform": "1.x-dev"
+        "oro/platform": "1.x-dev",
+        "bshaffer/oauth2-server-bundle": "dev-master"
     },
     "config": {
         "component-dir": "web/bundles/components"

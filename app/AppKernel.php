@@ -11,6 +11,7 @@ class AppKernel extends OroKernel
         $bundles = array(
         // bundles,
             //new App\DemoBundle\AppDemoBundle(),
+            new OAuth2\ServerBundle\OAuth2ServerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev'))) {

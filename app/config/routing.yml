@@ -27,3 +27,8 @@ oro_default:
 oro_auto_routing:
     resource: .
     type:     oro_auto
+
+oauth2_server:
+    resource: "@OAuth2ServerBundle/Controller/"
+    type:     annotation
+    prefix:   /
